@@ -1,0 +1,39 @@
+Void setup () {
+Serial. begin (9600);
+}
+Void loop ()
+{
+Long duration, inches, cm;
+Pinmode (pingpin, OUTPUT);
+digitalWrite (pingpin, LOW);
+Delay Microseconds (2);
+DigitalWrite (pingpin, HIGH);
+Delay Microseconds (5);
+DigitalWrite (pingpin, LOW);
+pinmode(pingpin, INPUT);
+duration = pulseInhigh;
+
+Serial. Print (“FULL”);
+Serial. Print (“EMPTY”);
+Delay (30);
+}
+
+PROG 2
+#define trigPin 13
+#define echoPin 12
+#define led 11
+Void setup () {
+Seril.begin (9600);
+Pinmode (trigpin, OUTPUT);
+Pinmode (echopin, INPUT);
+Pinmode (led, OUTPUT);
+}
+{
+DigitalWrite (pingpin, LOW);
+Delay Microseconds (2);
+DigitalWrite (pingpin, HIGH);
+Delay Microseconds (5);
+DigitalWrite (pingpin, LOW);
+pinmode(pingpin, INPUT);
+duration = pulseInhigh;
+}
